@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/sign.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Мой список дел. Регистрация</h1>
+        </header>
+
+        <main class="main">
+            <div class="main__form">
+                <form class="form__signup" id="signup">
+                    <div class="form__name_block">
+                        <label for="up_name">Имя</label>
+                        <input type="text" class="form__name" id="up_name">
+                    </div>
+                    <div class="form__login_block">
+                        <label for="up_nickname">Логин</label>
+                        <input type="text" class="form__nickname" id="up_nickname">
+                    </div>
+                    <div class="form__psw_block">
+                        <label for="up_psw">Пароль</label>
+                        <input type="password" class="form__psw" id="up_psw">
+                    </div>
+                    <div class="form__submit_block">
+                        <button class="form__submit" type="submit">Зарегистрироваться</button>
+                    </div>
+                    <p>Если есть аккаунт - <a href="signin.html">Войти</a></p>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            @Copyright 2024
+        </footer>
+    </div>
+
+    <script src="/scripts/signup.js"></script>
+</body>
+</html>

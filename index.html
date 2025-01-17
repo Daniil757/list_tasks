@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачи</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Мой список дел</h1>
+            <span class="logout">Выйти</span>
+        </header>
+
+        <main class="main">
+            <div class="main__tasks_block">
+                <!-- Список задач - заполнятся в index.js при открытии страницы -->
+                <ul class="tasks__list">
+                    <li class="tasks__list_item">
+                        <span class="task__id">id</span>
+                        <span class="task__text">еуче</span>
+                        <div class="task__control_block">
+                            <input type="checkbox" class="task__checkbox" >
+                            <span class="task__edit">Редак.</span>
+                            <span class="task__delete">Удалить</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Форма редактирования задачи - всплывающее окно -->
+            <form class="task__edit_form display__none">
+                <span class="edit__close">X</span>
+                <div class="edit__task">
+                    <label for="edit__task_id">Текст задачи (макс. 255 символов)</label>
+                    <input type="text" id="edit__task_id">
+                </div>
+                <button type="submit">Сохранить</button>
+            </form>
+
+            <!-- Форма добавления задачи - всплывающее окно -->
+            <form class="popup__task display__none">
+                <span class="popup__close">X</span>
+                <div class="popup__task_text">
+                    <label for="task">Текст задачи (макс. 255 символов)</label>
+                    <input type="text" id="task">
+                </div>
+                <button type="submit">Добавить</button>
+            </form>
+            <button class="task__add">+</button>
+
+        </main>
+
+        <footer class="footer">
+            @Copyright 2024
+        </footer>
+    </div>
+
+    <script src="./scripts/auth.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

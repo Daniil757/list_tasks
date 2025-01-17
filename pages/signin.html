@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/sign.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Мой список дел. Вход</h1>
+        </header>
+
+        <main class="main">
+            <div class="main__form">
+                <form class="form__signin" id="signin">
+                    <div class="form__login_block">
+                        <label for="in_nickname">Логин</label>
+                        <input type="text" class="form__nickname" id="in_nickname">
+                    </div>
+                    <div class="form__psw_block">
+                        <label for="in_psw">Пароль</label>
+                        <input type="password" class="form__psw" id="in_psw">
+                    </div>
+                    <div class="form__submit_block">
+                        <button class="form__submit" type="submit">Войти</button>
+                    </div>
+                    <p>Если нет аккаунта - <a href="signup.html">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            @Copyright 2024
+        </footer>
+    </div>
+
+    <script src="/scripts/signin.js"></script>
+</body>
+</html>
