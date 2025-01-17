@@ -111,7 +111,7 @@ async function loadTasklList() {
         updateTaskList();
     } catch (error) {
         console.log("Не авторизован");
-        window.location.replace("/pages/signin.html")
+        window.location.replace("./pages/signin.html")
     }
 }
 
@@ -290,5 +290,5 @@ function updateEventListener() {
 // выход из аккаунта
 btnLogout.addEventListener("click", () => {
     localStorage.removeItem("token");
-    window.location.replace('/pages/signin.html')
+    window.location.replace('./pages/signin.html')
 })
