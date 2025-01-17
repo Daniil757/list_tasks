@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
         let res = await req.json();        
         if (res.status === 200) {
-            window.location.replace("/index.html")
+            window.location.replace("../index.html")
         }
     } catch (error) {
         console.log("Не авторизован");
@@ -50,7 +50,7 @@ signinForm.addEventListener("submit", async (e) => {
         
         let res = await req.json()
         localStorage.setItem("token",JSON.stringify(res.values.token))
-        window.location.replace("/index.html")
+        window.location.replace("../index.html")
     } catch (error) {
         console.log("Ошибка отправки запроса");
     }
