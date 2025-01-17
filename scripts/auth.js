@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         });
     } catch (error) {
         console.log("Не авторизован");
-        window.location.replace("https://daniil757.github.io/list_tasks/pages/signin.html")
+        window.location.replace("./pages/skdfsdf.html")
     }
 })
