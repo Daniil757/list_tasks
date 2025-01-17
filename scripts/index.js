@@ -112,6 +112,7 @@ async function loadTasklList() {
     } catch (error) {
         console.log("Не авторизован");
         window.location.replace("./pages/signin.html")
+        window.location.replace("/pages/signin2.html")
     }
 }
 
