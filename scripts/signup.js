@@ -35,9 +35,9 @@ signupForm.addEventListener("submit", async (e) => {
         const nikname = document.getElementById("up_nickname").value;
         const firstName = document.getElementById("up_name").value;
         const password = document.getElementById("up_psw").value;
-        checkLenght(nikname)
-        checkLenght(firstName)
-        checkLenght(password)
+        checkLenght(nikname, "логина")
+        checkLenght(firstName, "имени")
+        checkLenght(password, "пароля")
         
         let url = 'http://localhost:3500/api/auth/signup';
         let req = await fetch(url, {
@@ -60,8 +60,8 @@ signupForm.addEventListener("submit", async (e) => {
 })
 
 // проверка на 6 символов - для всех полей для упрощения
-function checkLenght(word) {
+function checkLenght(word, type = "слова") {
     word.trim();
     if (word.length < 6)
-        alert("Длина слова должна быть больше 6 символов")
+        alert(`Длина ${type} должна быть больше 6 символов`)
 }

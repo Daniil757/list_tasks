@@ -47,7 +47,7 @@ signinForm.addEventListener("submit", async (e) => {
                 password: password
             })
         });
-        
+                
         let res = await req.json()
         localStorage.setItem("token",JSON.stringify(res.values.token))
         window.location.replace("../index.html")
