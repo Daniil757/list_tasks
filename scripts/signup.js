@@ -11,7 +11,7 @@ const signupForm = document.getElementById("signup")
 // при открытии страницы проверяем токен, если норм то авторизируем сразу
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        let url = 'http://localhost:3500/api/tasks/get';
+        let url = 'http://a1076816.xsph.ru/api/tasks/get';
         const token = JSON.parse(localStorage.getItem("token"))
         let req = await fetch(url, {
             headers: {
@@ -39,7 +39,7 @@ signupForm.addEventListener("submit", async (e) => {
         checkLenght(firstName, "имени")
         checkLenght(password, "пароля")
         
-        let url = 'http://localhost:3500/api/auth/signup';
+        let url = 'http://a1076816.xsph.ru/api/auth/signup';
         let req = await fetch(url, {
             method: "POST",
             headers: {

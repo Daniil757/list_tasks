@@ -11,7 +11,7 @@ const signinForm = document.getElementById("signin")
 // при открытии страницы проверяем токен, если норм то авторизируем сразу
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        let url = 'http://localhost:3500/api/tasks/get';
+        let url = 'http://a1076816.xsph.ru/api/tasks/get';
         const token = JSON.parse(localStorage.getItem("token"))
         let req = await fetch(url, {
             headers: {
@@ -36,7 +36,7 @@ signinForm.addEventListener("submit", async (e) => {
         const nikname = document.getElementById("in_nickname").value;
         const password = document.getElementById("in_psw").value;
         
-        let url = 'http://localhost:3500/api/auth/signin';
+        let url = 'http://a1076816.xsph.ru/api/auth/signin';
         let req = await fetch(url, {
             method: "POST",
             headers: {

@@ -8,7 +8,8 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        let url = 'http://localhost:3500/api/tasks/get';
+        // let url = 'http://a1076816.xsph.ru/api/tasks/get';
+        let url = 'http://a1076816.xsph.ru/api/tasks/get';
         const token = JSON.parse(localStorage.getItem("token"))
         let req = await fetch(url, {
             headers: {

@@ -61,7 +61,7 @@ formAddTask.addEventListener("submit", async (e) => {
     try {
         let task = document.getElementById("task").value;
         task = task.trim();
-        let url = 'http://localhost:3500/api/tasks/create';
+        let url = 'http://a1076816.xsph.ru/api/tasks/create';
         const token = JSON.parse(localStorage.getItem("token"));
         let req = await fetch(url, {
             method: "POST",
@@ -97,7 +97,7 @@ function checkLenght(word) {
 // функция загрузки задач
 async function loadTasklList() {
     try {
-        let url = 'http://localhost:3500/api/tasks/get';
+        let url = 'http://a1076816.xsph.ru/api/tasks/get';
         const token = JSON.parse(localStorage.getItem("token"))
         let req = await fetch(url, {
             headers: {
@@ -121,7 +121,7 @@ async function updateTextTask() {
         let task = document.getElementById("edit__task_id").value;
         task = task.trim();
         let id = editTaskData.id;
-        let url = 'http://localhost:3500/api/tasks/update-text';
+        let url = 'http://a1076816.xsph.ru/api/tasks/update-text';
         const token = JSON.parse(localStorage.getItem("token"));
         let req = await fetch(url, {
             method: "PATCH",
@@ -195,7 +195,7 @@ const handleClickStatusTask = async (event) => {
     let id = Number(liTask.childNodes[1].innerHTML);
        
     try {
-        let url = 'http://localhost:3500/api/tasks/update-status';
+        let url = 'http://a1076816.xsph.ru/api/tasks/update-status';
         const token = JSON.parse(localStorage.getItem("token"));
         let req = await fetch(url, {
             method: "PATCH",
@@ -230,7 +230,7 @@ const handleClickDeleteTask = async (event) => {
     let id = Number(liTask.childNodes[1].innerHTML);
        
     try {
-        let url = 'http://localhost:3500/api/tasks/delete';
+        let url = 'http://a1076816.xsph.ru/api/tasks/delete';
         const token = JSON.parse(localStorage.getItem("token"));
         let req = await fetch(url, {
             method: "DELETE",
